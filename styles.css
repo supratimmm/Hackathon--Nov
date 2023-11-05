@@ -1,0 +1,142 @@
+/* Reset some basic elements */
+html, body, div, span, applet, object, iframe,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Add a default font if you like */
+}
+
+#quiz-container {
+  width: 300px; /* Set to your preferred width */
+  margin: 10px auto; /* Centers the container */
+  border: 1px solid #ddd; /* Optional: adds a border */
+  border-radius: 8px; /* Optional: rounds the corners */
+  padding: 20px; /* Optional: adds some space inside the container */
+  background-color: white; /* Optional: sets a background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+}
+
+#question {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#answer-options li {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #e9ecef;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#answer-options li:hover {
+    background-color: #dde1e0;
+}
+
+#submit-answer {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#submit-answer:hover {
+    background-color: #0056b3;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* Additional CSS to indicate selected option */
+#answer-options li.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Subtle 'pop' on selection */
+#answer-options li:not(.selected):active {
+    transform: scale(0.98);
+}
+
+/* Feedback color */
+#feedback.correct {
+    color: #28a745;
+}
+
+#feedback.wrong {
+    color: #dc3545;
+}
+
+#feedback.warning {
+    color: #ffc107;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+}
+
+
+
+.difficulty-btn {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
